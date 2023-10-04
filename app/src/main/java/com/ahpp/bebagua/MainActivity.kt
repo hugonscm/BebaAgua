@@ -29,7 +29,7 @@ class MainActivity : ComponentActivity() {
 
     private lateinit var binding: ActivityMainBinding
 
-    private lateinit var edit_peso: EditText
+    /*private lateinit var edit_peso: EditText
     private lateinit var edit_idade: EditText
     private lateinit var bt_calcular: Button
     private lateinit var txt_resutado_ml: TextView
@@ -37,7 +37,7 @@ class MainActivity : ComponentActivity() {
     private lateinit var bt_lembrete: Button
     private lateinit var bt_alarme: Button
     private lateinit var txt_horas: TextView
-    private lateinit var txt_minutos: TextView
+    private lateinit var txt_minutos: TextView*/
 
     private lateinit var calcularIngestaoDiaria: CalcularIngestaoDiaria
     private var resultadoMl = 0f
