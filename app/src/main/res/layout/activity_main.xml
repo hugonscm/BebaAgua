@@ -1,16 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<androidx.core.widget.NestedScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:fillViewport="true"
+    tools:context=".MainActivity"
+    android:fitsSystemWindows="true"
     xmlns:android="http://schemas.android.com/apk/res/android">
-
-<androidx.constraintlayout.widget.ConstraintLayout
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity">
 
     <View
         android:id="@+id/container_header"
@@ -109,15 +105,15 @@
         android:layout_width="250dp"
         android:layout_height="250dp"
         android:layout_marginStart="50dp"
-        android:layout_marginTop="20dp"
+
         android:layout_marginEnd="50dp"
-        android:layout_marginBottom="200dp"
+
         android:background="@drawable/container_result_ml"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/text_dois_pontos"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/bt_calcular" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextPeso" />
 
     <TextView
         android:id="@+id/txt_resultado"
@@ -162,7 +158,6 @@
         android:id="@+id/text_hora"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="30dp"
         android:text="@string/hora"
         android:textColor="@android:color/black"
         android:textSize="35sp"
@@ -174,7 +169,6 @@
         android:id="@+id/text_dois_pontos"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="30dp"
         android:text="@string/dois_pontos"
         android:textColor="@android:color/black"
         android:textSize="35sp"
@@ -187,7 +181,6 @@
         android:id="@+id/text_minutos"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="30dp"
         android:text="@string/minutos"
         android:textColor="@android:color/black"
         android:textSize="35sp"
@@ -196,4 +189,3 @@
         app:layout_constraintTop_toBottomOf="@+id/bt_alarme" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
-</androidx.core.widget.NestedScrollView>

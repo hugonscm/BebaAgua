@@ -137,14 +137,15 @@ class MainActivity : ComponentActivity() {
 
     @Composable
     private fun ChangeSystemBarsTheme(lightTheme: Boolean) {
-        val mycollor = Color.Transparent
+        val holo_blue_bright = Color(0xFF00DDFF)
+        val white = Color(0xFFFFFFFF)
         if (lightTheme) {
             enableEdgeToEdge(
-                statusBarStyle = SystemBarStyle.light(mycollor.toArgb(), mycollor.toArgb()),
-                navigationBarStyle = SystemBarStyle.light(mycollor.toArgb(), mycollor.toArgb()))
+                statusBarStyle = SystemBarStyle.light(holo_blue_bright.toArgb(), holo_blue_bright.toArgb()),
+                navigationBarStyle = SystemBarStyle.light(white.toArgb(), white.toArgb()))
         } else {
             enableEdgeToEdge(
-                statusBarStyle = SystemBarStyle.dark(mycollor.toArgb()),
+                statusBarStyle = SystemBarStyle.dark(holo_blue_bright.toArgb()),
                 navigationBarStyle = SystemBarStyle.dark(Color.Black.toArgb()))
         }
     }
